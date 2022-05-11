@@ -11,4 +11,5 @@ The first addressed task is zero-shot text classification. The underlying idea i
 # Few-shot Text Classification
 Two different approaches are proposed.
 1. Train a classifier on top of the freezed sentence transformers. For the examples selection several techniques have been tested; 
+![alt text](https://github.com/MorenoSara/Few-Shot_Text_Classification/blob/main/classifier_plot_results.eps?raw=true)
 2. Finetune the sentence transformer.
