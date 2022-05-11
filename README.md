@@ -11,7 +11,11 @@ The first addressed task is zero-shot text classification. The underlying idea i
 # Few-shot Text Classification
 Two different approaches are proposed.
 1. `Train a classifier on top of the freezed sentence transformer`. For the examples selection several techniques have been tested; 
-<img src="https://user-images.githubusercontent.com/89184723/167891926-ba3339c9-ee2c-4b98-86fc-af8ebd586ff5.jpg" width="700" height="500">
+
+<p align="center">
+  <img src="https://github.com/MorenoSara/Few-Shot_Text_Classification/blob/main/classifier_plot_results.jpg" width="700" height="500">
+<p\>
+  
 The best results are obtained selecting the centroids within all the domains, having balanced distributions. However, this solution needs a labeled training data. The only technique that do not involeves labels for the selection of the examples is the one that uses the clusters among the whole training data, irrispectively of the labels. This techniques lead to an unbalanced distribution among classes, however, execpt for low number of shots, the performances achieved with this fashon of selection are comparable to those obtained considering the labels.
 
 2. `Finetune the sentence transformer`: the whole sentence transformer is finetuned, without a classifier on top.
